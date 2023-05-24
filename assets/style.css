@@ -1,187 +1,66 @@
-:root {
-  --col-1: sandybrown;
-
+/* Header CSS */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row wrap;
+  background-color: chocolate;
+  padding: 30px;
 }
 
-#aboutme {
-text-align: center;
+.text1 {
+  margin: 0;
+  color: white;
+  background-color: black;
+  border: 3px;
 }
 
+.portfolio-logo {
+  width: 80px;
+}
+
+/* body css */
 body {
-  background-color: var(--col-1);
+background-color: sandybrown;}
+
+/* main CSS */
+
+main {
+   display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 70px;
+text-align: right;
+margin: 10px ;
 }
 
-
-/* image classes */
-.img1 {
+.pfp {
+  float: left;
   width: 150px;
 }
 
+/* dev gallery CSS */
+
+.img {
+  width: 300px;
+}
 .img2 {
-  width: 50%}
-
-.img3 {
-  width: 33%;
+  width: 500px;
 }
-.dev-gallery {
+
+#devGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  display: flex; align-items: center;
-  justify-content: center;
-  display: inline;
-}
-
-
-/* header CSS */
-header {
-  display: flex; 
-  justify-content: flex-end;
-    background-color: black;
-padding: 30px;
-
-}
-h1 {
-    display: flex; 
-  justify-content: center;
-background-color: chocolate;
-position: relative;
-font-size: xx-large;
-}
-
-main h1 {
-      display: flex; 
-  justify-content: center;
-background-color: black;
-position: relative;
-font-size: xx-large;
-
-}
-h2 {
-  font-size:x-large
-}
-
-h3 {
-  font-size: larger;
   background-color: chocolate;
-  color: #000;
+  margin: 10px;
 }
 
-h4 {
-  font-size: large;
-}
-h5 {
-  font-size: medium;
-}
+/* contact form CSS */
 
-main {
-  background-color: black;
-  color: #ffffff;
-}
-
-li {
-  position: relative;
-  display: inline;
-}
-
-li a {
-display: inline;
-}
-
-p a {
-  display: block;
-}
-
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-
-form ul li {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  background-color: #000;
-  color: #ffffff;
-}
-
-/* Contact information */
-.contact {
-  color: blue;
-  margin: 1.5rem;
+#contact {
   text-align: center;
-  text-decoration: underline;
-  bottom: 0;
-}
-
-.contact-info {
-  text-align: center;
-  bottom: 0;
-}
-
-.contact:focus .link1{
-display: inline;
-color: blue;
-  text-decoration: underline;
-
-}
-
-.link1 {
-  display: none;
-}
-
-.link2 {
-  display: none;
-}
-
-.link3 {
-  display: none;
-}
-
-.contact-desc1 {
-  display: none;
-}
-.contact-desc2 {
-  display: none;
-}
-.contact-desc3 {
-  display: none;
-}
-
-.links:focus .contact-desc1{
-  display: inline;
-}
-.links:focus .contact-desc2{
-  display: inline;
-}
-.links:focus .contact-desc3{
-  display: inline;
-}
-
-
-/* screen sizing */
- @media screen and (max-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
-  #dev-gallery {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  }
- 
-
-/* media query for larger screens */
-@media screen and (min-width: 992px) {
-  header {
-    width: 100%;
-  }
-
-  #devgallery {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
+  display: flex;
+  justify-content: center;
 }
