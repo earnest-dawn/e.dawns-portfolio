@@ -12,7 +12,14 @@ header {
   margin: 0;
   color: white;
   background-color: black;
-  border: 3px;
+  border: 3px double sandybrown;
+}
+
+.text2 {
+  margin: 0;
+  color: white;
+  background-color: black;
+  border: 3px double sandybrown;
 }
 
 .portfolio-logo {
